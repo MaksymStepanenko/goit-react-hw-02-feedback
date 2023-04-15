@@ -5,6 +5,8 @@ import FeedbackOptions from './FeedbackOptions';
 import Section from './Section';
 import Notification from './Notification';
 
+
+
 class Feedbacks extends React.Component {
   static default = {
     value: 0,
@@ -57,6 +59,3 @@ class Feedbacks extends React.Component {
 }
 
 export default Feedbacks;
-
-// Please leave feedback
-// Statistics

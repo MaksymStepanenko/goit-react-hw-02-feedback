@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import css from './Feedbacks.module.css';
 
 export default function FeedbackOptions({ countGood, countNeutral, countBad }) {

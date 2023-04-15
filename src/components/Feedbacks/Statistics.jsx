@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from 'prop-types';
 import css from './Feedbacks.module.css'
 
 export default function Statistics({ good, neutral, bad }) {
@@ -22,3 +23,9 @@ export default function Statistics({ good, neutral, bad }) {
         </div >
     )
 }
+
+Statistics.propTypes = {
+  good: PropTypes.number.isRequired,
+  neutral: PropTypes.number.isRequired,
+  bad: PropTypes.number.isRequired,
+};
