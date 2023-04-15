@@ -1,16 +1,9 @@
-export const App = () => {
+import Feedbacks from "./Feedbacks/Feedbacks";
+
+const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
-  );
+    <Feedbacks />
+  )
 };
+
+export default App
