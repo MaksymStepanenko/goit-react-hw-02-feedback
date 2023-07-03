@@ -45,28 +45,28 @@ class App extends Component {
     const handleClickButton = this.handleClickButton;
 
     return (
-        <div className={css.wrapper}>
-          <Section title="Please leave feedback">
-            <FeedbackOptions
-              options={options}
-              onLeaveFeedback={handleClickButton}
-            />
-          </Section>
+      <div className={css.wrapper}>
+        <Section title="Please leave feedback">
+          <FeedbackOptions
+            options={options}
+            onLeaveFeedback={handleClickButton}
+          />
+        </Section>
 
-          <Section title="Statistics">
-            {countTotalFeedback > 0 ? (
-              <Statistics
-                good={good}
-                neutral={neutral}
-                bad={bad}
-                total={countTotalFeedback}
-                positivePercentage={countPositiveFeedbackPercentage}
-              />
-            ) : (
-              <Notification message="There is no feedback" />
-            )}
-          </Section>
-        </div>
+        <Section title="Statistics">
+          {countTotalFeedback > 0 ? (
+            <Statistics
+              good={good}
+              neutral={neutral}
+              bad={bad}
+              total={countTotalFeedback}
+              positivePercentage={countPositiveFeedbackPercentage}
+            />
+          ) : (
+            <Notification message="There is no feedback" />
+          )}
+        </Section>
+      </div>
     );
   }
 }

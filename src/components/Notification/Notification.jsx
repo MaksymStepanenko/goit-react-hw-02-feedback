@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 
-
 function Notification({ message }) {
   return (
     <div>
